@@ -32,7 +32,7 @@ export default function Camera() {
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <h2>React Camera PWA</h2>
+      <h2>React PWA-Playground</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <video
         ref={videoRef}

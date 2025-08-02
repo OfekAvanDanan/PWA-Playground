@@ -1,7 +1,7 @@
 {
-  "name": "Camera PWA",
-  "short_name": "CamPWA",
-  "description": "A Progressive Web App for camera functionality",
+  "name": "PWA-Playground",
+  "short_name": "PWA-Playground",
+  "description": "small pwa playground template",
   "theme_color": "#3367D6",
   "background_color": "#ffffff",
   "display": "standalone",
