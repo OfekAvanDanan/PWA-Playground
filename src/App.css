@@ -1,123 +1,129 @@
-.App {
-  text-align: center;
+/* General layout */
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(145deg, #0d0d0f, #18191b);
+  margin: 0;
+  padding: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 20px;
 }
 
-.App-header {
+/* Main wrapper */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Glassy card */
+.glassy-panel {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border-radius: 16px;
+  padding: 2rem;
   max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
-.App-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+.glassy-panel:hover {
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.03), 0 0 60px rgba(0, 0, 0, 0.35);
 }
 
+/* Title */
+.Title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+#app-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* Tagline */
+.tagline {
+  text-align: center;
+  font-size: 1.05rem;
+  opacity: 0.85;
+  margin: 0.5rem 0 1.5rem;
+  line-height: 1.5;
+}
+
+/* Status section */
 .pwa-status {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px 0;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  line-height: 1.6;
 }
 
-.pwa-status h2 {
-  margin-top: 0;
-  color: #ffd700;
-}
-
-.pwa-status p {
-  margin: 10px 0;
-  font-size: 1.1rem;
-}
-
-.install-button {
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-  color: white;
+/* Install button */
+.button {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
   border: none;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color 0.2s ease, transform 0.2s ease;
   cursor: pointer;
-  margin: 20px 0;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 1rem auto 0;
+  width: 100%;
+  display: block;
 }
 
-.install-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+.button:hover {
+  transform: scale(1.02);
 }
 
-.installed-message {
-  background: rgba(76, 175, 80, 0.2);
-  border: 2px solid #4caf50;
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px 0;
+.button:active {
+  transform: scale(0.97);
 }
 
-.installed-message p {
-  margin: 10px 0;
-  font-size: 1.1rem;
+#green {
+  background-color: #24b64b;
+  color: #ffffff;
 }
 
-.instructions {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px 0;
-  text-align: left;
+#green:hover {
+  background-color: #36cc5e;
 }
 
-.instructions h3 {
-  margin-top: 0;
-  color: #ffd700;
+#green:active {
+  background-color: #2db451;
+}
+
+/* Info section */
+.info {
+  font-size: 0.85rem;
+  color: #ffffff9d;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .instructions ul {
-  list-style: none;
-  padding: 0;
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0;
+  text-align: left;
 }
 
 .instructions li {
-  margin: 10px 0;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  border-left: 4px solid #ffd700;
-}
-
-.camera-section {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px 0;
-}
-
-.camera-section h2 {
-  color: #ffd700;
-  margin-top: 0;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-  .App-header h1 {
-    font-size: 2rem;
-  }
-  
-  .pwa-status, .instructions, .camera-section {
-    padding: 15px;
-  }
-  
-  .install-button {
-    padding: 12px 25px;
-    font-size: 1.1rem;
-  }
+  margin-bottom: 0.4rem;
 }
