@@ -21,7 +21,7 @@ export default defineConfig({
   server: {
     host: true,
 
-  allowedHosts: true, // ← פה תכניס את הכתובת של ngrok
+  allowedHosts: true, 
     hmr: {
       overlay: false,
     },

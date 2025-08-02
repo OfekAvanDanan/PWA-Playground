@@ -42,7 +42,7 @@ export default function Camera() {
         controls={false}
       />
       <div style={{ marginTop: 16 }}>
-        <button onClick={openCamera}>פתח מצלמה</button>
+        <button onClick={openCamera}>Camera</button>
       </div>
       <input
         type="file"
