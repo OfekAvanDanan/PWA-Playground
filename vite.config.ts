@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
+import fs from 'fs';
 
 export default defineConfig({
   plugins: [
@@ -18,6 +19,9 @@ export default defineConfig({
     force: true,
   },
   server: {
+    host: true,
+
+  allowedHosts: true, // ← פה תכניס את הכתובת של ngrok
     hmr: {
       overlay: false,
     },
