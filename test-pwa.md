@@ -6,6 +6,7 @@
    ```bash
    npm run dev -- --host
    ```
+   - HTTPS is enabled; accept the browser warning for the self-signed certificate.
 
 2. **Find your computer's IP address:**
    - Windows: `ipconfig` (look for IPv4 Address)
@@ -13,8 +14,8 @@
 
 3. **Access on mobile:**
    - Open your mobile browser
-   - Go to: `http://YOUR_IP_ADDRESS:5173`
-   - Example: `http://192.168.1.100:5173`
+   - Go to: `https://YOUR_IP_ADDRESS:5173`
+   - Example: `https://192.168.1.100:5173`
 
 ## Installation Methods
 

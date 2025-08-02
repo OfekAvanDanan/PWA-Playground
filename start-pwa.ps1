@@ -18,13 +18,14 @@ if (-not $ipAddress) {
 }
 
 Write-Host "📱 Mobile Access URLs:" -ForegroundColor Cyan
-Write-Host "   Local:  http://localhost:5173" -ForegroundColor White
-Write-Host "   Mobile: http://$ipAddress:5173" -ForegroundColor White
+Write-Host "   Local:  https://localhost:5173" -ForegroundColor White
+Write-Host "   Mobile: https://$ipAddress:5173" -ForegroundColor White
+Write-Host "   Note: Accept the security warning for the self-signed certificate" -ForegroundColor Yellow
 Write-Host ""
 
 Write-Host "📋 Instructions:" -ForegroundColor Yellow
 Write-Host "1. Open your mobile browser" -ForegroundColor White
-Write-Host "2. Go to: http://$ipAddress:5173" -ForegroundColor White
+Write-Host "2. Go to: https://$ipAddress:5173" -ForegroundColor White
 Write-Host "3. Install the PWA using your browser's install option" -ForegroundColor White
 Write-Host ""
 
@@ -38,4 +39,5 @@ Write-Host "⏳ Starting server... (Press Ctrl+C to stop)" -ForegroundColor Gree
 Write-Host ""
 
 # Start the development server
-npm run dev -- --host 
+npm run dev -- --host
+
