@@ -8,8 +8,9 @@
 
 ### 2. **היכנס לכתובת:**
 ```
-http://192.168.68.100:5173
+https://<your-ip>:5173
 ```
+- אם תתבקש, התקן ואשר את התעודה שנוצרה במכשיר הנייד
 
 ### 3. **בדוק שה-PWA מוכן להתקנה:**
 
@@ -52,7 +53,7 @@ http://192.168.68.100:5173
 1. **נקה את ה-cache של הדפדפן**
 2. **נסה דפדפן אחר**
 3. **וודא שאתה לא ב-incognito mode**
-4. **בדוק שה-URL מתחיל ב-`http://` ולא `file://`**
+4. **בדוק שה-URL מתחיל ב-`https://` ולא `file://`**
 
 ### **אם האפליקציה לא נפתחת כמו אפליקציה:**
 1. **וודא שה-`display: 'standalone'` מוגדר ב-manifest**
@@ -69,10 +70,10 @@ http://192.168.68.100:5173
 
 ## 🎯 כתובות לבדיקה:
 
-- **מקומי:** `http://localhost:5173`
-- **מובייל:** `http://192.168.68.100:5173`
-- **Manifest:** `http://192.168.68.100:5173/manifest.json`
-- **Service Worker:** `http://192.168.68.100:5173/sw.js`
+- **מקומי:** `https://localhost:5173`
+- **מובייל:** `https://<your-ip>:5173`
+- **Manifest:** `https://<your-ip>:5173/manifest.json`
+- **Service Worker:** `https://<your-ip>:5173/sw.js`
 
 ## 💡 טיפים:
 
@@ -89,4 +90,4 @@ http://192.168.68.100:5173
 3. **השתמש ב-PWA Builder:**
    - https://www.pwabuilder.com/
    - הזן את ה-URL שלך
-   - תקבל המלצות לשיפור 
+   - תקבל המלצות לשיפור

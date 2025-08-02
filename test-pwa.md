@@ -13,8 +13,9 @@
 
 3. **Access on mobile:**
    - Open your mobile browser
-   - Go to: `http://YOUR_IP_ADDRESS:5173`
-   - Example: `http://192.168.1.100:5173`
+   - Go to: `https://YOUR_IP_ADDRESS:5173`
+   - Example: `https://192.168.1.100:5173`
+   - If prompted, install and trust the generated certificate
 
 ## Installation Methods
 
@@ -52,4 +53,4 @@
 
 1. Replace the placeholder icon files with real images
 2. Test offline functionality
-3. Add more PWA features like push notifications 
+3. Add more PWA features like push notifications
